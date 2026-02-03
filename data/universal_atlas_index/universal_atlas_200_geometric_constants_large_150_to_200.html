@@ -1,0 +1,1230 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Constantes Géométriques</title>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <style>
+            body { font-family: 'Segoe UI', Arial, sans-serif; margin: 40px; color: #333; }
+            table { border-collapse: collapse; width: 100%; border: 2px solid #444; }
+            th, td { border: 1px solid #888; padding: 10px; text-align: left; }
+            th { background-color: #f0f0f0; font-weight: bold; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .mono { font-family: 'Courier New', monospace; white-space: pre; }
+            h1 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
+        </style>
+    </head>
+    <body>
+        <h1>Échantillon de Constantes Géométriques</h1>
+	<p>
+	SELECT CTEname, left(constanteFloat, 20), constanteSymbols, constanteLatex, Fibovar FROM geometricconstants 
+	WHERE length(constanteSymbols)>150 and length(constanteSymbols)<200 order by constantefloat asc limit 200;
+	</p>
+        <table>
+            <tr><th>CTEname</th><th>Fibovar</th><th>constantefloat (20)</th><th>Formule</th></tr>
+            
+        <tr>
+            <td>EJS_P2N3N2P0_N2P2P0P1_GC00004</td>
+            <td>EJS_P2N3N2P0_N2P2P0P1</td>
+            <td class="mono">0.000479212233290741</td>
+            <td>\(- \frac{3 \sqrt[3]{2} \sqrt{3} \left(\frac{\sqrt[3]{2} \sqrt{3}}{4} + \frac{5 \cdot 2^{\frac{2}{3}} \sqrt{3}}{4}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{2} + 2 \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}} + \frac{\left(\frac{3 \sqrt[3]{2}}{2} + 3\right) \left(- \frac{\sqrt[3]{2}}{4} + 1 + \frac{5 \cdot 2^{\frac{2}{3}}}{4}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{4} + \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P0P1_P1P0P3_GC00010</td>
+            <td>EJS_N3P0P1_P1P0P3</td>
+            <td class="mono">0.001048373397443565</td>
+            <td>\(\frac{- 9 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 + \frac{9}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N3P1_P1P0P3_GC00013</td>
+            <td>EJS_N2N3P1_P1P0P3</td>
+            <td class="mono">0.001386143952279475</td>
+            <td>\(\frac{- 3 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 10 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 + \frac{3}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N3P2P1_N3N3P0N1_GC00015</td>
+            <td>EJS_N2N3P2P1_N3N3P0N1</td>
+            <td class="mono">0.001532525099072324</td>
+            <td>\(- \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + \frac{5 \sqrt[6]{3}}{2}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(- \frac{5 \cdot 3^{\frac{2}{3}}}{6} - 1 + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N1P2_N2N2N4_GC00015</td>
+            <td>EJS_N3N1P2_N2N2N4</td>
+            <td class="mono">0.001580524465595408</td>
+            <td>\(\frac{- \frac{13 \cdot \sqrt[3]{10}}{3} - \frac{4}{3} + 8 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{13 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N3N1P2_N2P2P0P1_GC00018</td>
+            <td>EJS_N1N3N1P2_N2P2P0P1</td>
+            <td class="mono">0.001843683816622632</td>
+            <td>\(- \frac{3 \sqrt[3]{2} \sqrt{3} \left(\frac{\sqrt[3]{2} \sqrt{3}}{2} + \frac{2^{\frac{2}{3}} \sqrt{3}}{2}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{2} + 2 \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}} + \frac{\left(\frac{3 \sqrt[3]{2}}{2} + 3\right) \left(- \frac{\sqrt[3]{2}}{2} + \frac{2^{\frac{2}{3}}}{2} + \frac{3}{2}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{4} + \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2N3P0_N2N2N4_GC00021</td>
+            <td>EJS_P2N3P0_N2N2N4</td>
+            <td class="mono">0.002129975001374787</td>
+            <td>\(\frac{- \frac{5 \cdot 10^{\frac{2}{3}}}{6} - \frac{1}{3} + 8 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{5 \cdot \sqrt[3]{10}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2N3N3_P2P2P0N1_GC00024</td>
+            <td>EJS_P1N2N2N3_P2N2P0P1</td>
+            <td class="mono">0.002405576007544638</td>
+            <td>\(\frac{3 \sqrt[3]{2} \sqrt{3} \left(\frac{1}{2} - \frac{3 \cdot 2^{\frac{2}{3}}}{4}\right)}{2 \left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{2}} + \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} \left(3 - \frac{3 \sqrt[3]{2}}{2}\right)}{4 \left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + 27 \cdot 2^{\frac{2}{3}}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P1P0_N3P3N3_GC00024</td>
+            <td>EJS_P1P1P0_N3P3N3</td>
+            <td class="mono">0.002415429527097181</td>
+            <td>\(\frac{- \frac{7}{3} - \frac{8}{3 \sqrt[3]{8 + 6 \sqrt{2}}} + \frac{4 \sqrt[3]{8 + 6 \sqrt{2}}}{3}}{- \frac{4}{\sqrt[3]{8 + 6 \sqrt{2}}} + 9 \left(- \frac{\sqrt[3]{8 + 6 \sqrt{2}}}{3} + \frac{2}{3 \sqrt[3]{8 + 6 \sqrt{2}}} + \frac{1}{3}\right)^{2} + 1 + 2 \sqrt[3]{8 + 6 \sqrt{2}}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P0P1_N2N2N4_GC00025</td>
+            <td>EJS_N2P0P1_N2N2N4</td>
+            <td class="mono">0.002569171283820965</td>
+            <td>\(\frac{- \frac{8 \cdot \sqrt[3]{10}}{3} - \frac{2}{3} + 3 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{4 \cdot 10^{\frac{2}{3}}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0P1P0_N1N2P2P3_GC00028</td>
+            <td>EJS_P0P0P1P0_N1N2P2P3</td>
+            <td class="mono">0.002817026256941783</td>
+            <td>\(\frac{- \left(- \frac{1}{2} + \frac{\sqrt{7 - 2 \sqrt{5}}}{2}\right)^{2} + 3 \left(- \frac{1}{2} + \frac{\sqrt{7 - 2 \sqrt{5}}}{2}\right)^{3}}{- 2 \sqrt{7 - 2 \sqrt{5}} - 1 + 4 \left(- \frac{1}{2} + \frac{\sqrt{7 - 2 \sqrt{5}}}{2}\right)^{3} + 6 \left(- \frac{1}{2} + \frac{\sqrt{7 - 2 \sqrt{5}}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N3P0N2_P2N2P0P1_GC00031</td>
+            <td>EJS_N1N3P0N2_P2N2P0P1</td>
+            <td class="mono">0.003138713848817630</td>
+            <td>\(\frac{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right) \left(- \frac{3 \sqrt[3]{2}}{4} - \frac{2^{\frac{2}{3}}}{2} + 1\right)}{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{4}} - \frac{3 \sqrt[3]{2} \sqrt{3} \left(- \frac{3 \sqrt[3]{2} \sqrt{3}}{4} + \frac{2^{\frac{2}{3}} \sqrt{3}}{2}\right)}{2 \left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P1P0_P1P0P3_GC00032</td>
+            <td>EJS_P0P1P0_P1P0P3</td>
+            <td class="mono">0.003253944918322755</td>
+            <td>\(\frac{- \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2P1N2_N3P0N2_GC00033</td>
+            <td>EJS_P2P1N2_N3P0N2</td>
+            <td class="mono">0.003355661712885486</td>
+            <td>\(\frac{-2 - \frac{10}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}} + \frac{5 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}{3}}{9 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}{3} + \frac{2}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}\right)^{2} + 2}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P0P0_N1P0N4_GC00035</td>
+            <td>EJS_N1P0P0_N1P0N4</td>
+            <td class="mono">0.003571382531195423</td>
+            <td>\(\frac{- \frac{4 \sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}{3} + 1 + \frac{16}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}}{3 \left(- \frac{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}{3} + \frac{4}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N2P0_P1P0P3_GC00035</td>
+            <td>EJS_P1N2P0_P1P0P3</td>
+            <td class="mono">0.003591715473158664</td>
+            <td>\(\frac{- \frac{5}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} - 1 - 6 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 5 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N1P2N3_N3N3P0N1_GC00039</td>
+            <td>EJS_N1N1P2N3_N3N3P0N1</td>
+            <td class="mono">0.003935226259253235</td>
+            <td>\(- \frac{3 \cdot 3^{\frac{5}{6}} \left(- \frac{3^{\frac{5}{6}}}{6} + \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(- \frac{3^{\frac{2}{3}}}{3} - \frac{\sqrt[3]{3}}{6} + \frac{1}{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P0P2_N3P3P2_GC00040</td>
+            <td>EJS_N1P0P2_N3P3P2</td>
+            <td class="mono">0.004007164196944772</td>
+            <td>\(\frac{- 5 \left(- \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3} + \frac{1}{3}\right)^{2} + \frac{1}{3} + \frac{4 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}}{-4 + 9 \left(- \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3} + \frac{1}{3}\right)^{2} + 4 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P0N3_N4P3P3_GC00042</td>
+            <td>EJS_P1P0N3_N4P3P3</td>
+            <td class="mono">0.004244004042145985</td>
+            <td>\(\frac{- \frac{3 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} - \frac{1}{4} + 6 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2}}{- \frac{9}{2} + 3 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)} + 12 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P1P1_P1P0P3_GC00043</td>
+            <td>EJS_N3P1P1_P1P0P3</td>
+            <td class="mono">0.004302318315766320</td>
+            <td>\(\frac{- 10 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 2 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 + \frac{10}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2N3P2P0_N3N3P0N1_GC00044</td>
+            <td>EJS_P2N3P2P0_N3N3P0N1</td>
+            <td class="mono">0.004449101280661339</td>
+            <td>\(- \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + \frac{\sqrt[6]{3}}{2}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(- \frac{2}{3} - \frac{3^{\frac{2}{3}}}{6} + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P2N1_N2N2N4_GC00045</td>
+            <td>EJS_P0P2N1_N2N2N4</td>
+            <td class="mono">0.004546464920272081</td>
+            <td>\(\frac{- \frac{10^{\frac{2}{3}}}{3} - 7 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{2}{3} + \frac{2 \cdot \sqrt[3]{10}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N2P1_P1P0P3_GC00046</td>
+            <td>EJS_N2N2P1_P1P0P3</td>
+            <td class="mono">0.004640088870602230</td>
+            <td>\(\frac{- 4 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 7 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 + \frac{4}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N3P1_N2N2N4_GC00046</td>
+            <td>EJS_P0N3P1_N2N2N4</td>
+            <td class="mono">0.004699146285195753</td>
+            <td>\(\frac{- \sqrt[3]{10} - 1 + 11 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{10^{\frac{2}{3}}}{2}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P1P2_P2P2N2_GC00053</td>
+            <td>EJS_N3P1P2_P2P2N2</td>
+            <td class="mono">0.005321034641501567</td>
+            <td>\(\frac{- 10 \left(- \frac{1}{3} + \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + \frac{4}{3} + \frac{20 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}}{- \frac{16 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3} - 6 \left(- \frac{1}{3} + \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + \frac{10}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N2P0_N2N2N4_GC00056</td>
+            <td>EJS_P1N2P0_N2N2N4</td>
+            <td class="mono">0.005687793103421311</td>
+            <td>\(\frac{- \frac{10^{\frac{2}{3}}}{3} - \frac{1}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{2 \cdot \sqrt[3]{10}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3N2_N3P0N3_GC00060</td>
+            <td>EJS_P1N3N2_N3P0N3</td>
+            <td class="mono">0.006012130251811739</td>
+            <td>\(\frac{-1 + 11 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{3 \sqrt{21}}{2}}}{3} + \frac{1}{\sqrt[3]{\frac{9}{2} + \frac{3 \sqrt{21}}{2}}}\right)^{2}}{9 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{3 \sqrt{21}}{2}}}{3} + \frac{1}{\sqrt[3]{\frac{9}{2} + \frac{3 \sqrt{21}}{2}}}\right)^{2} + 3}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P1P1_N2N2N4_GC00061</td>
+            <td>EJS_N3P1P1_N2N2N4</td>
+            <td class="mono">0.006126989385867489</td>
+            <td>\(\frac{- \frac{11 \cdot \sqrt[3]{10}}{3} - \frac{2}{3} + \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{11 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N2P0_N4P3P3_GC00062</td>
+            <td>EJS_N3N2P0_N4P3P3</td>
+            <td class="mono">0.006234449364616158</td>
+            <td>\(\frac{- 15 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2} + \frac{5}{4} + \frac{7 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2}}{- \frac{9}{2} + 3 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)} + 12 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P2P0_P1P0P3_GC00065</td>
+            <td>EJS_P0P2P0_P1P0P3</td>
+            <td class="mono">0.006507889836645510</td>
+            <td>\(\frac{- 2 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 6 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + \frac{2}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P0P0_N2P0N4_GC00065</td>
+            <td>EJS_N1P0P0_N2P0N4</td>
+            <td class="mono">0.006578366774670007</td>
+            <td>\(\frac{- \frac{4 \sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}{3} + 1 + \frac{8}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}}{6 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}{3} + \frac{2}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N1P0_P1P0P3_GC00068</td>
+            <td>EJS_P1N1P0_P1P0P3</td>
+            <td class="mono">0.006845660391481419</td>
+            <td>\(\frac{- \frac{4}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} - 1 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 4 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3P2P0_N3N3P0N1_GC00068</td>
+            <td>EJS_P1N3P2P0_N3N3P0N1</td>
+            <td class="mono">0.006851802440842250</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(- \frac{3^{\frac{2}{3}}}{3} - \frac{2}{3} + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P0P0_N1P0N4_GC00071</td>
+            <td>EJS_N2P0P0_N1P0N4</td>
+            <td class="mono">0.007142765062390847</td>
+            <td>\(\frac{- \frac{8 \sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}{3} + 2 + \frac{32}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}}{3 \left(- \frac{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}{3} + \frac{4}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N3P2_N2N2N4_GC00072</td>
+            <td>EJS_N2N3P2_N2N2N4</td>
+            <td class="mono">0.007268317569016719</td>
+            <td>\(\frac{- \frac{11 \cdot \sqrt[3]{10}}{3} - \frac{5}{3} + 14 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{11 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N1P2N3_N3N3P0N1_GC00073</td>
+            <td>EJS_N2N1P2N3_N3N3P0N1</td>
+            <td class="mono">0.007365677462250354</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(- \frac{3^{\frac{2}{3}}}{2} - \frac{\sqrt[3]{3}}{6} + \frac{1}{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(- \frac{3^{\frac{5}{6}}}{6} + \frac{3 \sqrt[6]{3}}{2}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P2P1_P1P0P3_GC00075</td>
+            <td>EJS_N3P2P1_P1P0P3</td>
+            <td class="mono">0.007556263234089075</td>
+            <td>\(\frac{- 11 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 5 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 + \frac{11}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N1N2N3_N2P2P0P1_GC00075</td>
+            <td>EJS_N3N1P0P1_N2P2P0P1</td>
+            <td class="mono">0.007572457729830259</td>
+            <td>\(\frac{3 \sqrt[3]{2} \sqrt{3} \left(- \frac{2^{\frac{2}{3}} \sqrt{3}}{2} + \frac{\sqrt[3]{2} \sqrt{3}}{4}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{2} + 2 \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}} - \frac{\left(\frac{3 \sqrt[3]{2}}{2} + 3\right) \left(- \frac{2^{\frac{2}{3}}}{2} - \frac{\sqrt[3]{2}}{4} + \frac{1}{2}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{4} + \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N1P1_P1P0P3_GC00078</td>
+            <td>EJS_N2N1P1_P1P0P3</td>
+            <td class="mono">0.007894033788924985</td>
+            <td>\(\frac{- 5 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 4 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 + \frac{5}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2P1_N2N2N4_GC00082</td>
+            <td>EJS_N1N2P1_N2N2N4</td>
+            <td class="mono">0.008256964387242277</td>
+            <td>\(\frac{- 2 \cdot \sqrt[3]{10} - 1 + 9 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + 10^{\frac{2}{3}}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P2P2_N3P0N2_GC00083</td>
+            <td>EJS_N1P2P2_N3P0N2</td>
+            <td class="mono">0.008340779055204484</td>
+            <td>\(\frac{1 - 6 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}{3} + \frac{2}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}\right)^{2}}{9 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}{3} + \frac{2}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}\right)^{2} + 2}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N1P2_N4N3P3_GC00086</td>
+            <td>EJS_N1N1P2_N4N3P3</td>
+            <td class="mono">0.008661856002006064</td>
+            <td>\(\frac{- 2 \left(- \frac{5^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{5}}{4} - \frac{1}{4}\right)^{2} + \frac{\sqrt[3]{5}}{2} + \frac{5^{\frac{2}{3}}}{2} + \frac{3}{2}}{\left(- \frac{5^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{5}}{4} - \frac{1}{4}\right) \left(- \frac{9}{2} - \frac{3 \cdot 5^{\frac{2}{3}}}{2} - \frac{3 \cdot \sqrt[3]{5}}{2} + 12 \left(- \frac{5^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{5}}{4} - \frac{1}{4}\right)^{2}\right)}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0P1P0_N1P2P0P2_GC00087</td>
+            <td>EJS_P0P0P1P0_N1P2P0P2</td>
+            <td class="mono">0.008722628088053321</td>
+            <td>\(\frac{- \left(- \frac{\sqrt{2} \cdot \sqrt[4]{3}}{2} + \frac{1}{2} + \frac{\sqrt{3}}{2}\right)^{2} + 2 \left(- \frac{\sqrt{2} \cdot \sqrt[4]{3}}{2} + \frac{1}{2} + \frac{\sqrt{3}}{2}\right)^{3}}{-2 - 6 \left(- \frac{\sqrt{2} \cdot \sqrt[4]{3}}{2} + \frac{1}{2} + \frac{\sqrt{3}}{2}\right)^{2} + 4 \left(- \frac{\sqrt{2} \cdot \sqrt[4]{3}}{2} + \frac{1}{2} + \frac{\sqrt{3}}{2}\right)^{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P0P0_N3P0N4_GC00091</td>
+            <td>EJS_N1P0P0_N3P0N4</td>
+            <td class="mono">0.009143984874616860</td>
+            <td>\(\frac{- \frac{4 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{337}}{2}}}{3} + 1 + \frac{16}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{337}}{2}}}}{9 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{\sqrt{337}}{2}}}{3} + \frac{4}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{337}}{2}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3N2P0_N2P2P0P1_GC00094</td>
+            <td>EJS_P1N3N2P0_N2P2P0P1</td>
+            <td class="mono">0.009416141546452891</td>
+            <td>\(- \frac{3 \sqrt[3]{2} \sqrt{3} \left(\frac{\sqrt[3]{2} \sqrt{3}}{4} + 2^{\frac{2}{3}} \sqrt{3}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{2} + 2 \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}} + \frac{\left(\frac{3 \sqrt[3]{2}}{2} + 3\right) \left(- \frac{\sqrt[3]{2}}{4} + 1 + 2^{\frac{2}{3}}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{4} + \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N3P2P1_N3N3P0N1_GC00097</td>
+            <td>EJS_N3N3P2P1_N3N3P0N1</td>
+            <td class="mono">0.009768378622431266</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(- 3^{\frac{2}{3}} - 1 + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + 3 \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N2N3_N2P2P2_GC00098</td>
+            <td>EJS_N2N2N3_N2P2P2</td>
+            <td class="mono">0.009868591341216022</td>
+            <td>\(\frac{- 5 \left(\frac{1}{3} - \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + \frac{4}{3} + \frac{8 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}}{- \frac{10}{3} + 6 \left(\frac{1}{3} - \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + \frac{16 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P0N1_N2N2N4_GC00102</td>
+            <td>EJS_P1P0N1_N2N2N4</td>
+            <td class="mono">0.010234258023693393</td>
+            <td>\(\frac{- \frac{2 \cdot 10^{\frac{2}{3}}}{3} - \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{1}{3} + \frac{4 \cdot \sqrt[3]{10}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N1P2N3_N2N2P0N1_GC00103</td>
+            <td>EJS_N3N1P2N3_N2N2P0N1</td>
+            <td class="mono">0.010301400896494041</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{2}}{2} + 3\right) \left(- 2^{\frac{2}{3}} - \frac{\sqrt[3]{2}}{4} + \frac{1}{2}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2}} + \frac{3 \sqrt[3]{2} \sqrt{3} \left(- \frac{\sqrt[3]{2} \sqrt{3}}{4} + 2^{\frac{2}{3}} \sqrt{3}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N2N3_N4P3P3_GC00104</td>
+            <td>EJS_N2N2N3_N4P3P3</td>
+            <td class="mono">0.010478453406762144</td>
+            <td>\(\frac{- 9 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2} + 1 + 2 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{- \frac{9}{2} + 3 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)} + 12 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N2N3_N4P0N2_GC00105</td>
+            <td>EJS_P1N2N3_N4P0N2</td>
+            <td class="mono">0.010586419210451833</td>
+            <td>\(\frac{-1 + 7 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}{3} + \frac{1}{2 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}\right)^{2}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}{3} + \frac{1}{2 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}\right)^{2} + 2}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2P1_P1P0P2_GC00106</td>
+            <td>EJS_N1N2P1_P1P0P2</td>
+            <td class="mono">0.010642054407280624</td>
+            <td>\(\frac{1 - 5 \left(- \frac{2}{3 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{177}}{18}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{177}}{18}}\right)^{2}}{-2 - 3 \left(- \frac{2}{3 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{177}}{18}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{177}}{18}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P2P0_P2P0P3_GC00106</td>
+            <td>EJS_P0P2P0_P2P0P3</td>
+            <td class="mono">0.010689087917980218</td>
+            <td>\(\frac{- 2 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}} + 6 \left(- \frac{1}{2 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}\right)^{2} + \frac{1}{\sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}}}{-3 - 6 \left(- \frac{1}{2 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P0P0_N1P0N4_GC00107</td>
+            <td>EJS_N3P0P0_N1P0N4</td>
+            <td class="mono">0.010714147593586270</td>
+            <td>\(\frac{- 4 \sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}} + 3 + \frac{48}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}}{3 \left(- \frac{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}{3} + \frac{4}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N1P2_N2P0N2_GC00107</td>
+            <td>EJS_N3N1P2_N2P0N2</td>
+            <td class="mono">0.010729157865560424</td>
+            <td>\(\frac{- \frac{7 \sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{129}}{4}}}{3} + \frac{7}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{129}}{4}}} + 3}{6 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{129}}{4}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{129}}{4}}}\right)^{2} + 2}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N3N1P2_N2P2P0P1_GC00107</td>
+            <td>EJS_N2N3N1P2_N2P2P0P1</td>
+            <td class="mono">0.010780613129784782</td>
+            <td>\(- \frac{3 \sqrt[3]{2} \sqrt{3} \left(\frac{2^{\frac{2}{3}} \sqrt{3}}{4} + \frac{\sqrt[3]{2} \sqrt{3}}{2}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{2} + 2 \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}} + \frac{\left(\frac{3 \sqrt[3]{2}}{2} + 3\right) \left(- \frac{\sqrt[3]{2}}{2} + \frac{2^{\frac{2}{3}}}{4} + \frac{3}{2}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{4} + \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N2P2_N2N2N4_GC00108</td>
+            <td>EJS_N3N2P2_N2N2N4</td>
+            <td class="mono">0.010826135671063243</td>
+            <td>\(\frac{- \frac{14 \cdot \sqrt[3]{10}}{3} - \frac{5}{3} + 12 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{7 \cdot 10^{\frac{2}{3}}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P0P1_P1P0P3_GC00111</td>
+            <td>EJS_N2P0P1_P1P0P3</td>
+            <td class="mono">0.011147978707247740</td>
+            <td>\(\frac{- 6 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 + \frac{6}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P0P0_N4P0N4_GC00113</td>
+            <td>EJS_N1P0P0_N4P0N4</td>
+            <td class="mono">0.011357576320673685</td>
+            <td>\(\frac{- \frac{4 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}{3} + 1 + \frac{4}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N1P1_N2N2N4_GC00118</td>
+            <td>EJS_N2N1P1_N2N2N4</td>
+            <td class="mono">0.011814782489288801</td>
+            <td>\(\frac{- 3 \cdot \sqrt[3]{10} - 1 + 7 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{3 \cdot 10^{\frac{2}{3}}}{2}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N2N3N1_P2N2P0P1_GC00120</td>
+            <td>EJS_N3N2N3N1_P2N2P0P1</td>
+            <td class="mono">0.012075643161979780</td>
+            <td>\(\frac{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right) \left(-1 + \frac{\sqrt[3]{2}}{4} + \frac{2^{\frac{2}{3}}}{4}\right)}{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{4}} - \frac{3 \sqrt[3]{2} \sqrt{3} \left(- \frac{2^{\frac{2}{3}} \sqrt{3}}{4} + \frac{\sqrt[3]{2} \sqrt{3}}{4}\right)}{2 \left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0N1_N3P3N3_GC00125</td>
+            <td>EJS_P0P0N1_N3P3N3</td>
+            <td class="mono">0.012570981289589917</td>
+            <td>\(\frac{\left(- \frac{\sqrt[3]{8 + 6 \sqrt{2}}}{3} + \frac{2}{3 \sqrt[3]{8 + 6 \sqrt{2}}} + \frac{1}{3}\right)^{2}}{- \frac{4}{\sqrt[3]{8 + 6 \sqrt{2}}} + 9 \left(- \frac{\sqrt[3]{8 + 6 \sqrt{2}}}{3} + \frac{2}{3 \sqrt[3]{8 + 6 \sqrt{2}}} + \frac{1}{3}\right)^{2} + 1 + 2 \sqrt[3]{8 + 6 \sqrt{2}}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P0P0_N2P0N4_GC00131</td>
+            <td>EJS_N2P0P0_N2P0N4</td>
+            <td class="mono">0.013156733549340014</td>
+            <td>\(\frac{- \frac{8 \sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}{3} + 2 + \frac{16}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}}{6 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}{3} + \frac{2}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P1P0_P1P0P3_GC00133</td>
+            <td>EJS_P1P1P0_P1P0P3</td>
+            <td class="mono">0.013353550228126929</td>
+            <td>\(\frac{- \frac{2}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} - 1 + 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0N1_N2P0N4_GC00135</td>
+            <td>EJS_P0P0N1_N2P0N4</td>
+            <td class="mono">0.013544667309239410</td>
+            <td>\(\frac{\left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}{3} + \frac{2}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}\right)^{2}}{6 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}{3} + \frac{2}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P1N1_N2N2N4_GC00137</td>
+            <td>EJS_P0P1N1_N2N2N4</td>
+            <td class="mono">0.013792076125739916</td>
+            <td>\(\frac{- \frac{10^{\frac{2}{3}}}{6} - 3 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{1}{3} + \frac{\sqrt[3]{10}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N2N3_N3P3P2_GC00138</td>
+            <td>EJS_N2N2N3_N3P3P2</td>
+            <td class="mono">0.013866811218492212</td>
+            <td>\(\frac{- 7 \left(- \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3} + \frac{1}{3}\right)^{2} + \frac{4}{3} + \frac{4 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}}{-4 + 9 \left(- \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3} + \frac{1}{3}\right)^{2} + 4 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N1P2_P2P0P1_GC00140</td>
+            <td>EJS_N1N1P2_P2P0P1</td>
+            <td class="mono">0.014069676583135605</td>
+            <td>\(\frac{1 - 3 \left(- \frac{1}{6 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{87}}{36}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{87}}{36}}\right)^{2}}{- 6 \left(- \frac{1}{6 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{87}}{36}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{87}}{36}}\right)^{2} - 1}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P1P1_P1P0P3_GC00144</td>
+            <td>EJS_N2P1P1_P1P0P3</td>
+            <td class="mono">0.014401923625570495</td>
+            <td>\(\frac{- 7 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 2 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 + \frac{7}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0N1_N1P0N4_GC00145</td>
+            <td>EJS_P0P0N1_N1P0N4</td>
+            <td class="mono">0.014502123859557486</td>
+            <td>\(\frac{\left(- \frac{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}{3} + \frac{4}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}\right)^{2}}{3 \left(- \frac{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}{3} + \frac{4}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P1N3N3_N3N3P0N1_GC00146</td>
+            <td>EJS_N2P1N3N3_N3N3P0N1</td>
+            <td class="mono">0.014658544357565283</td>
+            <td>\(\frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(\frac{\sqrt[6]{3}}{2} + \frac{3^{\frac{5}{6}}}{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(- \frac{3^{\frac{2}{3}}}{6} + \frac{\sqrt[3]{3}}{3} + 2\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2P1_P1P0P3_GC00147</td>
+            <td>EJS_N1N2P1_P1P0P3</td>
+            <td class="mono">0.014739694180406404</td>
+            <td>\(\frac{- \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 7 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + 1}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P2N2_N2N2N4_GC00147</td>
+            <td>EJS_P1P2N2_N2N2N4</td>
+            <td class="mono">0.014780722943965474</td>
+            <td>\(\frac{- 10^{\frac{2}{3}} - 8 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + 1 + 2 \cdot \sqrt[3]{10}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3P0_N2N2N4_GC00149</td>
+            <td>EJS_P1N3P0_N2N2N4</td>
+            <td class="mono">0.014933404308889146</td>
+            <td>\(\frac{- \frac{10^{\frac{2}{3}}}{6} - \frac{2}{3} + \frac{\sqrt[3]{10}}{3} + 10 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2N1P0P1_N3N3P0N1_GC00152</td>
+            <td>EJS_P2N1P0P1_N3N3P0N1</td>
+            <td class="mono">0.015236129980756826</td>
+            <td>\(\frac{3 \cdot 3^{\frac{5}{6}} \left(- \frac{\sqrt[6]{3}}{2} + \frac{3^{\frac{5}{6}}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} - \frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(- \frac{1}{3} + \frac{\sqrt[3]{3}}{6} + \frac{3^{\frac{2}{3}}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P0P1_N2N2N4_GC00153</td>
+            <td>EJS_N3P0P1_N2N2N4</td>
+            <td class="mono">0.015372600591335324</td>
+            <td>\(\frac{- 4 \cdot \sqrt[3]{10} - 1 + 5 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + 2 \cdot 10^{\frac{2}{3}}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P2N3_N4N3N3_GC00161</td>
+            <td>EJS_P1P2N3_N4N3N3</td>
+            <td class="mono">0.016185093032719223</td>
+            <td>\(\frac{- \frac{5 \cdot \sqrt[3]{3}}{4} - 6 \left(- \frac{3^{\frac{2}{3}}}{4} - \frac{1}{4} + \frac{\sqrt[3]{3}}{4}\right)^{2} + \frac{1}{4} + \frac{5 \cdot 3^{\frac{2}{3}}}{4}}{- \frac{3 \cdot 3^{\frac{2}{3}}}{2} + \frac{3}{2} + 12 \left(- \frac{3^{\frac{2}{3}}}{4} - \frac{1}{4} + \frac{\sqrt[3]{3}}{4}\right)^{2} + \frac{3 \cdot \sqrt[3]{3}}{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3N3_N4P0N3_GC00162</td>
+            <td>EJS_P1N3N3_N4P0N3</td>
+            <td class="mono">0.016208988136186188</td>
+            <td>\(\frac{-1 + 12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}{3} + \frac{3}{4 \sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}\right)^{2}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}{3} + \frac{3}{4 \sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}\right)^{2} + 3}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N2N1P0_N2P2P0P1_GC00165</td>
+            <td>EJS_N3N2N1P0_N2P2P0P1</td>
+            <td class="mono">0.016509387042992409</td>
+            <td>\(\frac{3 \sqrt[3]{2} \sqrt{3} \left(- \frac{2^{\frac{2}{3}} \sqrt{3}}{4} + \frac{\sqrt[3]{2} \sqrt{3}}{4}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{2} + 2 \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}} - \frac{\left(\frac{3 \sqrt[3]{2}}{2} + 3\right) \left(- \frac{2^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{2}}{4} + \frac{1}{2}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{4} + \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N2P2_N2P0N1_GC00165</td>
+            <td>EJS_N3N2P2_N2P0N1</td>
+            <td class="mono">0.016595310503052776</td>
+            <td>\(\frac{- \frac{5 \sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{87}}{4}}}{3} + \frac{5}{2 \sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{87}}{4}}} + 3}{1 + 6 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{87}}{4}}}{3} + \frac{1}{2 \sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{87}}{4}}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N2P1_P2P0P3_GC00166</td>
+            <td>EJS_P0N2P1_P2P0P3</td>
+            <td class="mono">0.016603592363970863</td>
+            <td>\(\frac{- \frac{1}{\sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}} - 7 \left(- \frac{1}{2 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}\right)^{2} + 2 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}}{-3 - 6 \left(- \frac{1}{2 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P2P0_P1P0P3_GC00166</td>
+            <td>EJS_P1P2P0_P1P0P3</td>
+            <td class="mono">0.016607495146449684</td>
+            <td>\(\frac{-1 - \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + 6 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P2N1_N2N2N4_GC00173</td>
+            <td>EJS_N1P2N1_N2N2N4</td>
+            <td class="mono">0.017349894227786440</td>
+            <td>\(\frac{- \frac{2 \cdot \sqrt[3]{10}}{3} - 5 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{1}{3} + \frac{10^{\frac{2}{3}}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N3P1_N2N2N4_GC00175</td>
+            <td>EJS_N1N3P1_N2N2N4</td>
+            <td class="mono">0.017502575592710112</td>
+            <td>\(\frac{- \frac{7 \cdot \sqrt[3]{10}}{3} - \frac{4}{3} + 13 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{7 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P2P1_P1P0P3_GC00176</td>
+            <td>EJS_N2P2P1_P1P0P3</td>
+            <td class="mono">0.017655868543893250</td>
+            <td>\(\frac{- 8 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 5 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 + \frac{8}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N2N1_N3P3P2_GC00178</td>
+            <td>EJS_N3N2N1_N3P3P2</td>
+            <td class="mono">0.017873975415436984</td>
+            <td>\(\frac{- 12 \left(- \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3} + \frac{1}{3}\right)^{2} + \frac{5}{3} + \frac{8 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}}{-4 + 9 \left(- \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3} + \frac{1}{3}\right)^{2} + 4 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N3P2_N4P0P1_GC00179</td>
+            <td>EJS_N3N3P2_N4P0P1</td>
+            <td class="mono">0.017960721885795541</td>
+            <td>\(\frac{3 - 5 \left(- \frac{\sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}{3} - \frac{1}{4 \sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}\right)^{2}}{-1 + 12 \left(- \frac{\sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}{3} - \frac{1}{4 \sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N1P1_P1P0P3_GC00179</td>
+            <td>EJS_N1N1P1_P1P0P3</td>
+            <td class="mono">0.017993639098729159</td>
+            <td>\(\frac{- 2 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 4 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 1 + \frac{2}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2P1P1_N3N3P0N1_GC00181</td>
+            <td>EJS_N1N2P1P1_N3N3P0N1</td>
+            <td class="mono">0.018152706162345841</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(- \frac{3^{\frac{2}{3}}}{2} - \frac{2}{3} + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + \frac{3 \sqrt[6]{3}}{2}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N3P1_N3P0P1_GC00182</td>
+            <td>EJS_N3N3P1_N3P0P1</td>
+            <td class="mono">0.018210230346217601</td>
+            <td>\(\frac{3 - 4 \left(- \frac{\sqrt[3]{\frac{\sqrt{77}}{2} + \frac{9}{2}}}{3} - \frac{1}{3 \sqrt[3]{\frac{\sqrt{77}}{2} + \frac{9}{2}}}\right)^{2}}{-1 + 9 \left(- \frac{\sqrt[3]{\frac{\sqrt{77}}{2} + \frac{9}{2}}}{3} - \frac{1}{3 \sqrt[3]{\frac{\sqrt{77}}{2} + \frac{9}{2}}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P0P0_N3P0N4_GC00182</td>
+            <td>EJS_N2P0P0_N3P0N4</td>
+            <td class="mono">0.018287969749233720</td>
+            <td>\(\frac{- \frac{8 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{337}}{2}}}{3} + 2 + \frac{32}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{337}}{2}}}}{9 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{\sqrt{337}}{2}}}{3} + \frac{4}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{337}}{2}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N2P0_N2N2N4_GC00184</td>
+            <td>EJS_P0N2P0_N2N2N4</td>
+            <td class="mono">0.018491222410935670</td>
+            <td>\(\frac{- \frac{2 \cdot \sqrt[3]{10}}{3} - \frac{2}{3} + 8 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{10^{\frac{2}{3}}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P2N1_N4N3N3_GC00185</td>
+            <td>EJS_P0P2N1_N4N3N3</td>
+            <td class="mono">0.018509007202046324</td>
+            <td>\(\frac{- 5 \left(- \frac{3^{\frac{2}{3}}}{4} - \frac{1}{4} + \frac{\sqrt[3]{3}}{4}\right)^{2} - \frac{\sqrt[3]{3}}{2} + \frac{1}{2} + \frac{3^{\frac{2}{3}}}{2}}{\left(- \frac{3^{\frac{2}{3}}}{4} - \frac{1}{4} + \frac{\sqrt[3]{3}}{4}\right) \left(- \frac{3 \cdot 3^{\frac{2}{3}}}{2} + \frac{3}{2} + 12 \left(- \frac{3^{\frac{2}{3}}}{4} - \frac{1}{4} + \frac{\sqrt[3]{3}}{4}\right)^{2} + \frac{3 \cdot \sqrt[3]{3}}{2}\right)}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N1P2N3_N3N3P0N1_GC00186</td>
+            <td>EJS_N3N1P2N3_N3N3P0N1</td>
+            <td class="mono">0.018666581183753945</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(- \frac{2 \cdot 3^{\frac{2}{3}}}{3} - \frac{\sqrt[3]{3}}{6} + \frac{1}{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(- \frac{3^{\frac{5}{6}}}{6} + 2 \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N1P2_N4P0N2_GC00192</td>
+            <td>EJS_N2N1P2_N4P0N2</td>
+            <td class="mono">0.019219846370471928</td>
+            <td>\(\frac{- \frac{5 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}{3} + \frac{5}{2 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}} + 2}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}{3} + \frac{1}{2 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}\right)^{2} + 2}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P0P0_N2P0N4_GC00197</td>
+            <td>EJS_N3P0P0_N2P0N4</td>
+            <td class="mono">0.019735100324010021</td>
+            <td>\(\frac{- 4 \sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}} + 3 + \frac{24}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}}{6 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}{3} + \frac{2}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P2P0_N2N2N4_GC00199</td>
+            <td>EJS_N3P2P0_N2N2N4</td>
+            <td class="mono">0.019919065511607406</td>
+            <td>\(\frac{- \frac{10 \cdot \sqrt[3]{10}}{3} - \frac{1}{3} - 2 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{5 \cdot 10^{\frac{2}{3}}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N3P2_N2N2N4_GC00200</td>
+            <td>EJS_N3N3P2_N2N2N4</td>
+            <td class="mono">0.020071746876531078</td>
+            <td>\(\frac{- 5 \cdot \sqrt[3]{10} - 2 + 16 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{5 \cdot 10^{\frac{2}{3}}}{2}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P2P0_N2N2N4_GC00204</td>
+            <td>EJS_N1P2P0_N2N2N4</td>
+            <td class="mono">0.020468516047386786</td>
+            <td>\(\frac{- \frac{2 \cdot \sqrt[3]{10}}{3} - 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{1}{3} + \frac{10^{\frac{2}{3}}}{3}}{\left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right) \left(- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}\right)}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N2N3N3_P2P2P0N1_GC00210</td>
+            <td>EJS_N2N2N3N3_P2P2P0N1</td>
+            <td class="mono">0.021012572475141931</td>
+            <td>\(\frac{3 \sqrt[3]{2} \sqrt{3} \left(- \frac{5 \sqrt[3]{2} \sqrt{3}}{4} + 2^{\frac{2}{3}} \sqrt{3}\right)}{2 \left(-3 + \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{2}} - \frac{\left(-3 + \frac{3 \sqrt[3]{2}}{2}\right) \left(-3 + \frac{5 \sqrt[3]{2}}{4} + 2^{\frac{2}{3}}\right)}{\left(-3 + \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{4}}\)</td>
+        </tr>
+        <tr>
+            <td>left(constanteFloat, 20)</td>
+            <td>EJS_N2N2P1_N2N2N4_GC00210</td>
+            <td class="mono">constanteSymbols    </td>
+            <td>\(Fibovar\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P0P1_P1P0P3_GC00212</td>
+            <td>EJS_N1P0P1_P1P0P3</td>
+            <td class="mono">0.021247584017051914</td>
+            <td>\(\frac{- 3 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 1 + \frac{3}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P1N3_P2P2N2_GC00214</td>
+            <td>EJS_P0P1N3_P2P2N2</td>
+            <td class="mono">0.021415696711607576</td>
+            <td>\(\frac{- \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3} + \frac{1}{3} + \left(- \frac{1}{3} + \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2}}{- \frac{16 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3} - 6 \left(- \frac{1}{3} + \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + \frac{10}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N3P1_P1P0P3_GC00215</td>
+            <td>EJS_P0N3P1_P1P0P3</td>
+            <td class="mono">0.021585354571887824</td>
+            <td>\(\frac{- \frac{3}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} - 10 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0N1_N4P0N3_GC00218</td>
+            <td>EJS_P0P0N1_N4P0N3</td>
+            <td class="mono">0.021846395091844970</td>
+            <td>\(\frac{\left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}{3} + \frac{3}{4 \sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}\right)^{2}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}{3} + \frac{3}{4 \sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}\right)^{2} + 3}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N1P0_N2N2N4_GC00220</td>
+            <td>EJS_N1N1P0_N2N2N4</td>
+            <td class="mono">0.022049040512982194</td>
+            <td>\(\frac{- \frac{5 \cdot \sqrt[3]{10}}{3} - \frac{2}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{5 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2N3P1P2_N3N3P0N1_GC00220</td>
+            <td>EJS_P2N3P1P2_N3N3P0N1</td>
+            <td class="mono">0.022087932421599077</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(-1 - \frac{3^{\frac{2}{3}}}{6} + \frac{\sqrt[3]{3}}{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{\sqrt[6]{3}}{2} + \frac{3^{\frac{5}{6}}}{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N3P0_N4N3P3_GC00221</td>
+            <td>EJS_N2N3P0_N4N3P3</td>
+            <td class="mono">0.022167743962350455</td>
+            <td>\(\frac{- 3 \left(- \frac{5^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{5}}{4} - \frac{1}{4}\right)^{2} + \frac{3 \cdot \sqrt[3]{5}}{4} + \frac{3 \cdot 5^{\frac{2}{3}}}{4} + \frac{11}{4}}{- \frac{9}{2} - \frac{3 \cdot 5^{\frac{2}{3}}}{2} - \frac{3 \cdot \sqrt[3]{5}}{2} + 12 \left(- \frac{5^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{5}}{4} - \frac{1}{4}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N1N3P2_P2N2P0P1_GC00223</td>
+            <td>EJS_N3N1N3P2_P2N2P0P1</td>
+            <td class="mono">0.022307602507336929</td>
+            <td>\(\frac{3 \sqrt[3]{2} \sqrt{3} \left(- \frac{2^{\frac{2}{3}} \sqrt{3}}{2} + \frac{\sqrt[3]{2} \sqrt{3}}{2}\right)}{2 \left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{2}} - \frac{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right) \left(- \frac{5}{2} + \frac{\sqrt[3]{2}}{2} + \frac{2^{\frac{2}{3}}}{2}\right)}{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{4}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N3P2_P1P0P3_GC00226</td>
+            <td>EJS_N3N3P2_P1P0P3</td>
+            <td class="mono">0.022633727969331390</td>
+            <td>\(\frac{- 6 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 11 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 + \frac{6}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P0P0_N4P0N4_GC00227</td>
+            <td>EJS_N2P0P0_N4P0N4</td>
+            <td class="mono">0.022715152641347371</td>
+            <td>\(\frac{- \frac{8 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}{3} + 2 + \frac{8}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N1P2N2_N3N3P0N1_GC00236</td>
+            <td>EJS_N3N1P2N2_N3N3P0N1</td>
+            <td class="mono">0.023620457520671401</td>
+            <td>\(- \frac{3 \cdot 3^{\frac{5}{6}} \left(- \frac{3^{\frac{5}{6}}}{6} + 2 \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(- \frac{2 \cdot 3^{\frac{2}{3}}}{3} - \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P0N2_N4N3N3_GC00237</td>
+            <td>EJS_P1P0N2_N4N3N3</td>
+            <td class="mono">0.023763764527670731</td>
+            <td>\(\frac{- \frac{3 \cdot \sqrt[3]{3}}{4} - \frac{1}{4} - \left(- \frac{3^{\frac{2}{3}}}{4} - \frac{1}{4} + \frac{\sqrt[3]{3}}{4}\right)^{2} + \frac{3 \cdot 3^{\frac{2}{3}}}{4}}{- \frac{3 \cdot 3^{\frac{2}{3}}}{2} + \frac{3}{2} + 12 \left(- \frac{3^{\frac{2}{3}}}{4} - \frac{1}{4} + \frac{\sqrt[3]{3}}{4}\right)^{2} + \frac{3 \cdot \sqrt[3]{3}}{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0N2_N4P0N4_GC00239</td>
+            <td>EJS_P0P0N2_N4P0N4</td>
+            <td class="mono">0.023988165851189514</td>
+            <td>\(\frac{2 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}\right)^{2}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P2P0_P2P0N4_GC00239</td>
+            <td>EJS_N3P2P0_P2P0N4</td>
+            <td class="mono">0.023997789637384757</td>
+            <td>\(\frac{\sqrt{6} \left(- \frac{64 \cos^{2}{\left(\frac{\operatorname{atan}{\left(\frac{\sqrt{303}}{9} \right)}}{3} \right)}}{3} + 3 + \frac{20 \sqrt{6} \cos{\left(\frac{\operatorname{atan}{\left(\frac{\sqrt{303}}{9} \right)}}{3} \right)}}{3}\right)}{\left(16 - 64 \cos^{2}{\left(\frac{\operatorname{atan}{\left(\frac{\sqrt{303}}{9} \right)}}{3} \right)}\right) \cos{\left(\frac{\operatorname{atan}{\left(\frac{\sqrt{303}}{9} \right)}}{3} \right)}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N3P2P1_N3N3P0N1_GC00241</td>
+            <td>EJS_P0N3P2P1_N3N3P0N1</td>
+            <td class="mono">0.024134332542079505</td>
+            <td>\(- \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + \frac{3 \sqrt[6]{3}}{2}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(- \frac{3^{\frac{2}{3}}}{2} - 1 + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P2P2_N4N3P3_GC00244</td>
+            <td>EJS_P1P2P2_N4N3P3</td>
+            <td class="mono">0.024400421007362463</td>
+            <td>\(\frac{- \frac{5}{4} - \frac{5^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{5}}{4} + \left(- \frac{5^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{5}}{4} - \frac{1}{4}\right)^{2}}{\left(- \frac{5^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{5}}{4} - \frac{1}{4}\right) \left(- \frac{9}{2} - \frac{3 \cdot 5^{\frac{2}{3}}}{2} - \frac{3 \cdot \sqrt[3]{5}}{2} + 12 \left(- \frac{5^{\frac{2}{3}}}{4} - \frac{\sqrt[3]{5}}{4} - \frac{1}{4}\right)^{2}\right)}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P1P1_P1P0P3_GC00245</td>
+            <td>EJS_N1P1P1_P1P0P3</td>
+            <td class="mono">0.024501528935374669</td>
+            <td>\(\frac{- 4 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 2 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 1 + \frac{4}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N1P1_N2N2N4_GC00246</td>
+            <td>EJS_N3N1P1_N2N2N4</td>
+            <td class="mono">0.024618211796803159</td>
+            <td>\(\frac{- \frac{13 \cdot \sqrt[3]{10}}{3} - \frac{4}{3} + 9 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{13 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N2P1_P1P0P3_GC00248</td>
+            <td>EJS_P0N2P1_P1P0P3</td>
+            <td class="mono">0.024839299490210579</td>
+            <td>\(\frac{- \frac{2}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} - 7 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2N3N1_N2N2N4_GC00251</td>
+            <td>EJS_P2N3N1_N2N2N4</td>
+            <td class="mono">0.025167662332582539</td>
+            <td>\(\frac{- \frac{5 \cdot 10^{\frac{2}{3}}}{6} - \frac{1}{3} + 9 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{5 \cdot \sqrt[3]{10}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2P2_P2P0P2_GC00253</td>
+            <td>EJS_N1N2P2_P2P0P2</td>
+            <td class="mono">0.025313345991252932</td>
+            <td>\(\frac{1 - 6 \left(- \frac{1}{3 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{129}}{36}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{129}}{36}}\right)^{2}}{-2 - 6 \left(- \frac{1}{3 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{129}}{36}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{129}}{36}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P0P0_N2N2N4_GC00256</td>
+            <td>EJS_N2P0P0_N2N2N4</td>
+            <td class="mono">0.025606858615028717</td>
+            <td>\(\frac{- \frac{8 \cdot \sqrt[3]{10}}{3} - \frac{2}{3} + 4 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{4 \cdot 10^{\frac{2}{3}}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2N2N2_P2N3N3_GC00256</td>
+            <td>EJS_P2N2N2_P2N3N3</td>
+            <td class="mono">0.025666857641151830</td>
+            <td>\(\frac{- 2 \cdot 3^{\frac{2}{3}} - 4 - 2 \sqrt[3]{3} + 2 \left(\frac{1}{2} + \frac{\sqrt[3]{3}}{2} + \frac{3^{\frac{2}{3}}}{2}\right)^{2}}{\left(\frac{1}{2} + \frac{\sqrt[3]{3}}{2} + \frac{3^{\frac{2}{3}}}{2}\right) \left(- 6 \left(\frac{1}{2} + \frac{\sqrt[3]{3}}{2} + \frac{3^{\frac{2}{3}}}{2}\right)^{2} + 3 \sqrt[3]{3} + 6 + 3 \cdot 3^{\frac{2}{3}}\right)}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P0N2_P1P0N4_GC00258</td>
+            <td>EJS_P1P0N2_P1P0N4</td>
+            <td class="mono">0.025802280775237278</td>
+            <td>\(\frac{\sqrt{3} \left(- \frac{16 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\frac{\sqrt{687}}{9} \right)}}{3} \right)}}{3} - 1 + \frac{32 \cos^{2}{\left(\frac{\operatorname{atan}{\left(\frac{\sqrt{687}}{9} \right)}}{3} \right)}}{3}\right)}{\left(16 - 64 \cos^{2}{\left(\frac{\operatorname{atan}{\left(\frac{\sqrt{687}}{9} \right)}}{3} \right)}\right) \cos{\left(\frac{\operatorname{atan}{\left(\frac{\sqrt{687}}{9} \right)}}{3} \right)}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N2P2_P1P0P3_GC00258</td>
+            <td>EJS_N3N2P2_P1P0P3</td>
+            <td class="mono">0.025887672887654145</td>
+            <td>\(\frac{- 7 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 8 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 + \frac{7}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N2N3_N2P3P2_GC00259</td>
+            <td>EJS_P0N2N3_N2P3P2</td>
+            <td class="mono">0.025900916968171616</td>
+            <td>\(\frac{- \left(\frac{1}{2} + \frac{\sqrt{21} \cos{\left(\frac{\operatorname{atan}{\left(\frac{2 \sqrt{237}}{9} \right)}}{3} \right)}}{3}\right)^{2} + 1 + \frac{2 \sqrt{21} \cos{\left(\frac{\operatorname{atan}{\left(\frac{2 \sqrt{237}}{9} \right)}}{3} \right)}}{3}}{- 2 \sqrt{21} \cos{\left(\frac{\operatorname{atan}{\left(\frac{2 \sqrt{237}}{9} \right)}}{3} \right)} - 5 + 6 \left(\frac{1}{2} + \frac{\sqrt{21} \cos{\left(\frac{\operatorname{atan}{\left(\frac{2 \sqrt{237}}{9} \right)}}{3} \right)}}{3}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P1N2_P2P1N4_GC00260</td>
+            <td>EJS_N1P1N2_P2P1N4</td>
+            <td class="mono">0.026014404751143771</td>
+            <td>\(\frac{- 3 \left(- \frac{1}{6} + \frac{5 \cos{\left(\frac{\operatorname{atan}{\left(\frac{6 \sqrt{426}}{17} \right)}}{3} \right)}}{3}\right)^{2} + \frac{1}{2} + 5 \cos{\left(\frac{\operatorname{atan}{\left(\frac{6 \sqrt{426}}{17} \right)}}{3} \right)}}{- 6 \left(- \frac{1}{6} + \frac{5 \cos{\left(\frac{\operatorname{atan}{\left(\frac{6 \sqrt{426}}{17} \right)}}{3} \right)}}{3}\right)^{2} - \frac{10 \cos{\left(\frac{\operatorname{atan}{\left(\frac{6 \sqrt{426}}{17} \right)}}{3} \right)}}{3} + \frac{13}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P0P0_N4P0N3_GC00260</td>
+            <td>EJS_N1P0P0_N4P0N3</td>
+            <td class="mono">0.026044033012853654</td>
+            <td>\(\frac{- \sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}} + 1 + \frac{9}{4 \sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}{3} + \frac{3}{4 \sqrt[3]{\frac{27}{8} + \frac{27 \sqrt{2}}{8}}}\right)^{2} + 3}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2N3N2_N4N3N3_GC00260</td>
+            <td>EJS_P2N3N2_N4N3N3</td>
+            <td class="mono">0.026087678696997832</td>
+            <td>\(\frac{- \frac{5}{4} - \frac{3 \cdot \sqrt[3]{3}}{4} + 5 \left(- \frac{3^{\frac{2}{3}}}{4} - \frac{1}{4} + \frac{\sqrt[3]{3}}{4}\right)^{2} + \frac{3 \cdot 3^{\frac{2}{3}}}{4}}{- \frac{3 \cdot 3^{\frac{2}{3}}}{2} + \frac{3}{2} + 12 \left(- \frac{3^{\frac{2}{3}}}{4} - \frac{1}{4} + \frac{\sqrt[3]{3}}{4}\right)^{2} + \frac{3 \cdot \sqrt[3]{3}}{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P1P1_P3P3N2_GC00261</td>
+            <td>EJS_N2P1P1_P3P3N2</td>
+            <td class="mono">0.026105028140841367</td>
+            <td>\(\frac{- 9 \left(- \frac{1}{3} + \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}\right)^{2} + 1 + 2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{- 4 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)} - 9 \left(- \frac{1}{3} + \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P1N1_N4P0P1_GC00264</td>
+            <td>EJS_P1P1N1_N4P0P1</td>
+            <td class="mono">0.026464283262646599</td>
+            <td>\(\frac{-1 + 2 \left(- \frac{\sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}{3} - \frac{1}{4 \sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}\right)^{2}}{-1 + 12 \left(- \frac{\sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}{3} - \frac{1}{4 \sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P2N1_P2P2N2_GC00267</td>
+            <td>EJS_N3P2N1_P2P2N2</td>
+            <td class="mono">0.026736731353109144</td>
+            <td>\(\frac{- 9 \left(- \frac{1}{3} + \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + \frac{5}{3} + \frac{16 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}}{- \frac{16 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3} - 6 \left(- \frac{1}{3} + \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + \frac{10}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2N1P0P2_N3N3P0N1_GC00270</td>
+            <td>EJS_P2N1P0P2_N3N3P0N1</td>
+            <td class="mono">0.027050908723668520</td>
+            <td>\(\frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(- \frac{2}{3} + \frac{\sqrt[3]{3}}{6} + \frac{3^{\frac{2}{3}}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} - \frac{3 \cdot 3^{\frac{5}{6}} \left(- \frac{\sqrt[6]{3}}{2} + \frac{3^{\frac{5}{6}}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0N2_N2P0N4_GC00270</td>
+            <td>EJS_P0P0N2_N2P0N4</td>
+            <td class="mono">0.027089334618478821</td>
+            <td>\(\frac{2 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}{3} + \frac{2}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}\right)^{2}}{6 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}{3} + \frac{2}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{465}}{4}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N3P0_N2N2N4_GC00277</td>
+            <td>EJS_P0N3P0_N2N2N4</td>
+            <td class="mono">0.027736833616403505</td>
+            <td>\(\frac{- \sqrt[3]{10} - 1 + 12 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{10^{\frac{2}{3}}}{2}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P2P1_P1P0P3_GC00277</td>
+            <td>EJS_N1P2P1_P1P0P3</td>
+            <td class="mono">0.027755473853697424</td>
+            <td>\(\frac{- 5 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 5 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 1 + \frac{5}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N1P1_P1P0P3_GC00280</td>
+            <td>EJS_P0N1P1_P1P0P3</td>
+            <td class="mono">0.028093244408533334</td>
+            <td>\(\frac{- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} - 4 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P2P2_N4P0N2_GC00286</td>
+            <td>EJS_N1P2P2_N4P0N2</td>
+            <td class="mono">0.028689459190352153</td>
+            <td>\(\frac{1 - 6 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}{3} + \frac{1}{2 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}\right)^{2}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}{3} + \frac{1}{2 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}\right)^{2} + 2}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N2N1_N2N2N4_GC00287</td>
+            <td>EJS_P1N2N1_N2N2N4</td>
+            <td class="mono">0.028725480434629063</td>
+            <td>\(\frac{- \frac{10^{\frac{2}{3}}}{3} - \frac{1}{3} + 7 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{2 \cdot \sqrt[3]{10}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P1P1_N1P0N1_GC00287</td>
+            <td>EJS_N1P1P1_N1P0N1</td>
+            <td class="mono">0.028729979877031296</td>
+            <td>\(\frac{1 - 2 \left(- \frac{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{93}}{2}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{93}}{2}}}\right)^{2}}{1 + 3 \left(- \frac{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{93}}{2}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{93}}{2}}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P1P1_N4P3P3_GC00289</td>
+            <td>EJS_P1P1P1_N4P3P3</td>
+            <td class="mono">0.028988544480148258</td>
+            <td>\(\frac{- \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)} - \frac{1}{2} + 5 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2}}{- \frac{9}{2} + 3 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)} + 12 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0N2_N1P0N4_GC00290</td>
+            <td>EJS_P0P0N2_N1P0N4</td>
+            <td class="mono">0.029004247719114972</td>
+            <td>\(\frac{2 \left(- \frac{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}{3} + \frac{4}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}\right)^{2}}{3 \left(- \frac{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}{3} + \frac{4}{\sqrt[3]{\frac{27}{2} + \frac{3 \sqrt{849}}{2}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N1P2_P1P0P3_GC00291</td>
+            <td>EJS_N3N1P2_P1P0P3</td>
+            <td class="mono">0.029141617805976900</td>
+            <td>\(\frac{- 8 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 5 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 + \frac{8}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P1P0_N2N2N4_GC00291</td>
+            <td>EJS_N3P1P0_N2N2N4</td>
+            <td class="mono">0.029164676717075241</td>
+            <td>\(\frac{- \frac{11 \cdot \sqrt[3]{10}}{3} - \frac{2}{3} + 2 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{11 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2N3_N4P0P2_GC00294</td>
+            <td>EJS_N1N2N3_N4P0P2</td>
+            <td class="mono">0.029413565340877411</td>
+            <td>\(\frac{1 - \left(- \frac{\sqrt[3]{\frac{3 \sqrt{57}}{8} + \frac{27}{8}}}{3} - \frac{1}{2 \sqrt[3]{\frac{3 \sqrt{57}}{8} + \frac{27}{8}}}\right)^{2}}{-2 + 12 \left(- \frac{\sqrt[3]{\frac{3 \sqrt{57}}{8} + \frac{27}{8}}}{3} - \frac{1}{2 \sqrt[3]{\frac{3 \sqrt{57}}{8} + \frac{27}{8}}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N3P2P0_N3N3P0N1_GC00294</td>
+            <td>EJS_N1N3P2P0_N3N3P0N1</td>
+            <td class="mono">0.029453609883849432</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(- \frac{2 \cdot 3^{\frac{2}{3}}}{3} - \frac{2}{3} + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + 2 \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P2N1_N2N2N4_GC00297</td>
+            <td>EJS_P1P2N1_N2N2N4</td>
+            <td class="mono">0.029714127252854621</td>
+            <td>\(\frac{- 10^{\frac{2}{3}} - 9 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + 1 + 2 \cdot \sqrt[3]{10}}{\left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right) \left(- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}\right)}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P1N1_P3P3N2_GC00301</td>
+            <td>EJS_N1P1N1_P3P3N2</td>
+            <td class="mono">0.030112192337786139</td>
+            <td>\(\frac{- 4 \left(- \frac{1}{3} + \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}\right)^{2} + \frac{2}{3} + \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}}{- 4 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)} - 9 \left(- \frac{1}{3} + \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3N3_N3P0N3_GC00302</td>
+            <td>EJS_P1N3N3_N3P0N3</td>
+            <td class="mono">0.030251091936464959</td>
+            <td>\(\frac{-1 + 12 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{3 \sqrt{21}}{2}}}{3} + \frac{1}{\sqrt[3]{\frac{9}{2} + \frac{3 \sqrt{21}}{2}}}\right)^{2}}{9 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{3 \sqrt{21}}{2}}}{3} + \frac{1}{\sqrt[3]{\frac{9}{2} + \frac{3 \sqrt{21}}{2}}}\right)^{2} + 3}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N3P1_N2N2N4_GC00303</td>
+            <td>EJS_N2N3P1_N2N2N4</td>
+            <td class="mono">0.030306004900224471</td>
+            <td>\(\frac{- \frac{11 \cdot \sqrt[3]{10}}{3} - \frac{5}{3} + 15 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{11 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P0N1_N1N1N3_GC00312</td>
+            <td>EJS_P1P0N1_N1N1N3</td>
+            <td class="mono">0.031213885872027275</td>
+            <td>\(\frac{- \frac{8}{\sqrt[3]{1 + 3 \sqrt{57}}} + \sqrt[3]{1 + 3 \sqrt{57}}}{- \frac{2 \sqrt[3]{1 + 3 \sqrt{57}}}{3} + 3 \left(- \frac{\sqrt[3]{1 + 3 \sqrt{57}}}{3} - \frac{1}{3} + \frac{8}{3 \sqrt[3]{1 + 3 \sqrt{57}}}\right)^{2} + \frac{16}{3 \sqrt[3]{1 + 3 \sqrt{57}}} + \frac{7}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N3N1P0_P2N2P0P1_GC00312</td>
+            <td>EJS_N2N3N1P0_P2N2P0P1</td>
+            <td class="mono">0.031244531820499079</td>
+            <td>\(\frac{3 \sqrt[3]{2} \sqrt{3} \left(- \frac{\sqrt[3]{2} \sqrt{3}}{2} + \frac{2^{\frac{2}{3}} \sqrt{3}}{4}\right)}{2 \left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{2}} - \frac{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right) \left(- \frac{\sqrt[3]{2}}{2} - \frac{1}{2} - \frac{2^{\frac{2}{3}}}{4}\right)}{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{4}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N1P0_N2P2P2_GC00312</td>
+            <td>EJS_N2N1P0_N2P2P2</td>
+            <td class="mono">0.031284288052823599</td>
+            <td>\(\frac{- 6 \left(\frac{1}{3} - \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + 1 + 4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{- \frac{10}{3} + 6 \left(\frac{1}{3} - \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + \frac{16 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2P0_N2N2N4_GC00312</td>
+            <td>EJS_N1N2P0_N2N2N4</td>
+            <td class="mono">0.031294651718450029</td>
+            <td>\(\frac{- 2 \cdot \sqrt[3]{10} - 1 + 10 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + 10^{\frac{2}{3}}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3P1_P1P0P3_GC00316</td>
+            <td>EJS_P1N3P1_P1P0P3</td>
+            <td class="mono">0.031684959881691998</td>
+            <td>\(\frac{- \frac{6}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} - 10 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} - 1 + 6 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N1N1_N2N2N4_GC00322</td>
+            <td>EJS_P0N1N1_N2N2N4</td>
+            <td class="mono">0.032283298536675587</td>
+            <td>\(\frac{- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + 5 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P0P2_P1P0P3_GC00323</td>
+            <td>EJS_N3P0P2_P1P0P3</td>
+            <td class="mono">0.032395562724299655</td>
+            <td>\(\frac{- 9 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 2 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 + \frac{9}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N3P2P2_N3N3P0N1_GC00325</td>
+            <td>EJS_N3N3P2P2_N3N3P0N1</td>
+            <td class="mono">0.032518660081994080</td>
+            <td>\(- \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + 3 \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(- 3^{\frac{2}{3}} - \frac{4}{3} + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N3P2_P1P0P3_GC00327</td>
+            <td>EJS_N2N3P2_P1P0P3</td>
+            <td class="mono">0.032733333279135564</td>
+            <td>\(\frac{- 3 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 11 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 + \frac{3}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P2P1_N2P0N2_GC00330</td>
+            <td>EJS_N1P2P1_N2P0N2</td>
+            <td class="mono">0.033054803563330726</td>
+            <td>\(\frac{1 - 5 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{129}}{4}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{129}}{4}}}\right)^{2}}{6 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{129}}{4}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{4} + \frac{3 \sqrt{129}}{4}}}\right)^{2} + 2}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3P1P2_N3N3P0N1_GC00333</td>
+            <td>EJS_P1N3P1P2_N3N3P0N1</td>
+            <td class="mono">0.033388836143102667</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(-1 - \frac{3^{\frac{2}{3}}}{3} + \frac{\sqrt[3]{3}}{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{3} + \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3N2P1_N2N2N4_GC00338</td>
+            <td>EJS_N3N2P1_N2N2N4</td>
+            <td class="mono">0.033863823002270995</td>
+            <td>\(\frac{- \frac{14 \cdot \sqrt[3]{10}}{3} - \frac{5}{3} + 13 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{7 \cdot 10^{\frac{2}{3}}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P0P0_N4P0N4_GC00340</td>
+            <td>EJS_N3P0P0_N4P0N4</td>
+            <td class="mono">0.034072728962021056</td>
+            <td>\(\frac{- 4 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}} + 3 + \frac{12}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P1N3_P3P3N2_GC00341</td>
+            <td>EJS_P0P1N3_P3P3N2</td>
+            <td class="mono">0.034119356534730912</td>
+            <td>\(\frac{- \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3} + \frac{1}{3} + \left(- \frac{1}{3} + \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}\right)^{2}}{- 4 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)} - 9 \left(- \frac{1}{3} + \frac{2 \sqrt{3} \cos{\left(\frac{\operatorname{atan}{\left(\sqrt{107} \right)}}{3} \right)}}{3}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P0P0_N2P0N3_GC00341</td>
+            <td>EJS_N2P0P0_N2P0N3</td>
+            <td class="mono">0.034160436709802190</td>
+            <td>\(\frac{- 2 \sqrt[3]{\frac{27}{4} + \frac{27 \sqrt{3}}{4}} + 2 + \frac{9}{\sqrt[3]{\frac{27}{4} + \frac{27 \sqrt{3}}{4}}}}{6 \left(- \frac{\sqrt[3]{\frac{27}{4} + \frac{27 \sqrt{3}}{4}}}{3} + \frac{3}{2 \sqrt[3]{\frac{27}{4} + \frac{27 \sqrt{3}}{4}}}\right)^{2} + 3}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P1P1_P1P0P3_GC00346</td>
+            <td>EJS_P0P1P1_P1P0P3</td>
+            <td class="mono">0.034601134245178844</td>
+            <td>\(\frac{- \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 2 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N1P0_N2N2N4_GC00348</td>
+            <td>EJS_N2N1P0_N2N2N4</td>
+            <td class="mono">0.034852469820496552</td>
+            <td>\(\frac{- 3 \cdot \sqrt[3]{10} - 1 + 8 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{3 \cdot 10^{\frac{2}{3}}}{2}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N1P2N2_N3N3P0N1_GC00349</td>
+            <td>EJS_N2N1P2N2_N3N3P0N1</td>
+            <td class="mono">0.034921361242174992</td>
+            <td>\(- \frac{3 \cdot 3^{\frac{5}{6}} \left(- \frac{3^{\frac{5}{6}}}{6} + \frac{3 \sqrt[6]{3}}{2}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(- \frac{3^{\frac{2}{3}}}{2} - \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N2P1_P1P0P3_GC00349</td>
+            <td>EJS_P1N2P1_P1P0P3</td>
+            <td class="mono">0.034938904800014753</td>
+            <td>\(\frac{- \frac{5}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} - 1 - 7 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 5 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N1P1_N4P3P3_GC00352</td>
+            <td>EJS_N2N1P1_N4P3P3</td>
+            <td class="mono">0.035222993844764417</td>
+            <td>\(\frac{- 10 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2} + \frac{3}{4} + \frac{5 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2}}{- \frac{9}{2} + 3 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)} + 12 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3P2P1_N3N3P0N1_GC00354</td>
+            <td>EJS_P1N3P2P1_N3N3P0N1</td>
+            <td class="mono">0.035435236263583096</td>
+            <td>\(- \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{\left(-3 - \frac{3 \sqrt[3]{3}}{2}\right) \left(-1 - \frac{3^{\frac{2}{3}}}{3} + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P0P0_P1P0P2_GC00356</td>
+            <td>EJS_P1P0P0_P1P0P2</td>
+            <td class="mono">0.035619062805195802</td>
+            <td>\(\frac{- \frac{4}{3 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{177}}{18}}} - 1 + 2 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{177}}{18}}}{-2 - 3 \left(- \frac{2}{3 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{177}}{18}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{177}}{18}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P1P2_P1P0P3_GC00356</td>
+            <td>EJS_N3P1P2_P1P0P3</td>
+            <td class="mono">0.035649507642622410</td>
+            <td>\(\frac{- 10 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 + \frac{10}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P0N1_N2N2N4_GC00358</td>
+            <td>EJS_N1P0N1_N2N2N4</td>
+            <td class="mono">0.035841116638722110</td>
+            <td>\(\frac{- \frac{4 \cdot \sqrt[3]{10}}{3} - \frac{1}{3} + 3 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0N3_N4P0N4_GC00359</td>
+            <td>EJS_P0P0N3_N4P0N4</td>
+            <td class="mono">0.035982248776784271</td>
+            <td>\(\frac{3 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}\right)^{2}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}{3} + \frac{1}{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{273}}{8}}}\right)^{2} + 4}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N2P2_P1P0P3_GC00359</td>
+            <td>EJS_N2N2P2_P1P0P3</td>
+            <td class="mono">0.035987278197458319</td>
+            <td>\(\frac{- 4 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 8 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 + \frac{4}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P2P0_P3P3N3_GC00362</td>
+            <td>EJS_P1P2P0_P3P3N3</td>
+            <td class="mono">0.036213265996459850</td>
+            <td>\(\frac{- 3 \left(- \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(3 \sqrt{7} \right)}}{3} \right)}}{3} - \frac{1}{3}\right)^{2} + \frac{2}{3} + \frac{20 \cos{\left(\frac{\operatorname{atan}{\left(3 \sqrt{7} \right)}}{3} \right)}}{3}}{- 9 \left(- \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(3 \sqrt{7} \right)}}{3} \right)}}{3} - \frac{1}{3}\right)^{2} + 5 + 8 \cos{\left(\frac{\operatorname{atan}{\left(3 \sqrt{7} \right)}}{3} \right)}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N3N2P0_N2P2P0P1_GC00362</td>
+            <td>EJS_N2N3N2P0_N2P2P0P1</td>
+            <td class="mono">0.036226929485939342</td>
+            <td>\(- \frac{3 \sqrt[3]{2} \sqrt{3} \left(\frac{\sqrt[3]{2} \sqrt{3}}{4} + \frac{2^{\frac{2}{3}} \sqrt{3}}{4}\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{2} + 2 \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}} + \frac{\left(\frac{3 \sqrt[3]{2}}{2} + 3\right) \left(- \frac{\sqrt[3]{2}}{4} + \frac{2^{\frac{2}{3}}}{4} + 1\right)}{\frac{27 \cdot 2^{\frac{2}{3}}}{4} + \left(\frac{3 \sqrt[3]{2}}{2} + 3\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P0N2_N2P2P2_GC00366</td>
+            <td>EJS_P1P0N2_N2P2P2</td>
+            <td class="mono">0.036605322694325166</td>
+            <td>\(\frac{- \frac{8 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3} - \frac{1}{3} + 4 \left(\frac{1}{3} - \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2}}{- \frac{10}{3} + 6 \left(\frac{1}{3} - \frac{4 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}\right)^{2} + \frac{16 \cos{\left(\frac{\operatorname{atan}{\left(\frac{3 \sqrt{111}}{5} \right)}}{3} \right)}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2N2N3_P2P2P0N1_GC00375</td>
+            <td>EJS_P1N2P2N3_P2N2P0P1</td>
+            <td class="mono">0.037521959518134341</td>
+            <td>\(\frac{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right) \left(- \sqrt[3]{2} - \frac{3 \cdot 2^{\frac{2}{3}}}{4} + \frac{5}{2}\right)}{\left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{4}} - \frac{3 \sqrt[3]{2} \sqrt{3} \left(- \sqrt[3]{2} \sqrt{3} + \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3}}{4}\right)}{2 \left(3 - \frac{3 \sqrt[3]{2}}{2}\right)^{2} + \frac{27 \cdot 2^{\frac{2}{3}}}{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1P2N3_N2N2N4_GC00378</td>
+            <td>EJS_P1P2N3_N2N2N4</td>
+            <td class="mono">0.037818410275173226</td>
+            <td>\(\frac{- 10^{\frac{2}{3}} - 7 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + 1 + 2 \cdot \sqrt[3]{10}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P2N3P2N1_N3N3P0N1_GC00378</td>
+            <td>EJS_P2N3P2N1_N3N3P0N1</td>
+            <td class="mono">0.037837937423764007</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(- \frac{3^{\frac{2}{3}}}{6} - \frac{1}{3} + \frac{\sqrt[3]{3}}{6}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(\frac{3^{\frac{5}{6}}}{6} + \frac{\sqrt[6]{3}}{2}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P2P1_P1P0P3_GC00378</td>
+            <td>EJS_P0P2P1_P1P0P3</td>
+            <td class="mono">0.037855079163501599</td>
+            <td>\(\frac{- 2 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 5 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + \frac{2}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1P1P2_N3P0N1_GC00379</td>
+            <td>EJS_N1P1P2_N3P0N1</td>
+            <td class="mono">0.037952919420629856</td>
+            <td>\(\frac{1 - 3 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{\sqrt{85}}{2}}}{3} + \frac{1}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{85}}{2}}}\right)^{2}}{1 + 9 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{\sqrt{85}}{2}}}{3} + \frac{1}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{85}}{2}}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N3N1_N2N2N4_GC00379</td>
+            <td>EJS_P1N3N1_N2N2N4</td>
+            <td class="mono">0.037971091640096898</td>
+            <td>\(\frac{- \frac{10^{\frac{2}{3}}}{6} - \frac{2}{3} + \frac{\sqrt[3]{10}}{3} + 11 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P2P1_P2P0P3_GC00379</td>
+            <td>EJS_P0P2P1_P2P0P3</td>
+            <td class="mono">0.037981768199931301</td>
+            <td>\(\frac{- 2 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}} + 5 \left(- \frac{1}{2 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}\right)^{2} + \frac{1}{\sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}}}{-3 - 6 \left(- \frac{1}{2 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{3}}{4}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N1P1_P1P0P3_GC00381</td>
+            <td>EJS_P1N1P1_P1P0P3</td>
+            <td class="mono">0.038192849718337508</td>
+            <td>\(\frac{- \frac{4}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} - 1 - 4 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 4 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P0P1N3_N3N3P0N1_GC00383</td>
+            <td>EJS_N2P0P1N3_N3N3P0N1</td>
+            <td class="mono">0.038351812445172111</td>
+            <td>\(\frac{\left(\frac{3 \sqrt[3]{3}}{2} + 3\right) \left(- \frac{3^{\frac{2}{3}}}{3} - \frac{\sqrt[3]{3}}{6} + \frac{2}{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{4} + \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}} + \frac{3 \cdot 3^{\frac{5}{6}} \left(- \frac{3^{\frac{5}{6}}}{6} + \sqrt[6]{3}\right)}{\frac{27 \cdot 3^{\frac{2}{3}}}{2} + 2 \left(-3 - \frac{3 \sqrt[3]{3}}{2}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P0P0_N2N2N4_GC00384</td>
+            <td>EJS_N3P0P0_N2N2N4</td>
+            <td class="mono">0.038410287922543076</td>
+            <td>\(\frac{- 4 \cdot \sqrt[3]{10} - 1 + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + 2 \cdot 10^{\frac{2}{3}}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P1N2N3_N3P0N2_GC00384</td>
+            <td>EJS_P1N2N3_N3P0N2</td>
+            <td class="mono">0.038483908653823659</td>
+            <td>\(\frac{-1 + 7 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}{3} + \frac{2}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}\right)^{2}}{9 \left(- \frac{\sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}{3} + \frac{2}{3 \sqrt[3]{\frac{9}{2} + \frac{\sqrt{113}}{2}}}\right)^{2} + 2}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P1P2_P2P0P2_GC00387</td>
+            <td>EJS_N2P1P2_P2P0P2</td>
+            <td class="mono">0.038749966001206700</td>
+            <td>\(\frac{- 5 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{129}}{36}} + 2 + \frac{5}{3 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{129}}{36}}}}{-2 - 6 \left(- \frac{1}{3 \sqrt[3]{\frac{1}{4} + \frac{\sqrt{129}}{36}}} + \sqrt[3]{\frac{1}{4} + \frac{\sqrt{129}}{36}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N3P2P2_P1P0P3_GC00389</td>
+            <td>EJS_N3P2P2_P1P0P3</td>
+            <td class="mono">0.038903452560945165</td>
+            <td>\(\frac{- 11 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} + 4 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 3 + \frac{11}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2N1P2_P1P0P3_GC00392</td>
+            <td>EJS_N2N1P2_P1P0P3</td>
+            <td class="mono">0.039241223115781074</td>
+            <td>\(\frac{- 5 \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}} - 5 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2} + 2 + \frac{5}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}}}{-3 - 3 \left(- \frac{1}{\sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}} + \sqrt[3]{\frac{1}{2} + \frac{\sqrt{5}}{2}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0P0N1_N4P0N2_GC00392</td>
+            <td>EJS_P0P0N1_N4P0N2</td>
+            <td class="mono">0.039275878400803987</td>
+            <td>\(\frac{\left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}{3} + \frac{1}{2 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}\right)^{2}}{12 \left(- \frac{\sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}{3} + \frac{1}{2 \sqrt[3]{\frac{27}{8} + \frac{3 \sqrt{105}}{8}}}\right)^{2} + 2}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_P0N1N3_N1N4P3_GC00393</td>
+            <td>EJS_P0N1N3_N1N4P3</td>
+            <td class="mono">0.039395898420124362</td>
+            <td>\(\frac{1}{- \frac{8 \sqrt[3]{\frac{3 \sqrt{741}}{2} + \frac{263}{2}}}{3} - \frac{41}{3} - \frac{200}{3 \sqrt[3]{\frac{3 \sqrt{741}}{2} + \frac{263}{2}}} + 3 \left(- \frac{\sqrt[3]{\frac{3 \sqrt{741}}{2} + \frac{263}{2}}}{3} - \frac{25}{3 \sqrt[3]{\frac{3 \sqrt{741}}{2} + \frac{263}{2}}} - \frac{4}{3}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N2P1N1_N2N2N4_GC00393</td>
+            <td>EJS_N2P1N1_N2N2N4</td>
+            <td class="mono">0.039398934740768634</td>
+            <td>\(\frac{- \frac{7 \cdot \sqrt[3]{10}}{3} - \frac{1}{3} + \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{7 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N1N2_N4P3P3_GC00394</td>
+            <td>EJS_N1N1N2_N4P3P3</td>
+            <td class="mono">0.039466997886910403</td>
+            <td>\(\frac{- 4 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2} + \frac{1}{2} + \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{- \frac{9}{2} + 3 \sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)} + 12 \left(- \frac{\sqrt{5} \cos{\left(\frac{\operatorname{atan}{\left(2 \sqrt{31} \right)}}{3} \right)}}{2} + \frac{1}{4}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N2N2_N4P0P1_GC00402</td>
+            <td>EJS_N1N2N2_N4P0P1</td>
+            <td class="mono">0.040262223510918308</td>
+            <td>\(\frac{- \frac{\sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}{3} - \frac{1}{4 \sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}} + 1}{-1 + 12 \left(- \frac{\sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}{3} - \frac{1}{4 \sqrt[3]{\frac{3 \sqrt{78}}{8} + \frac{27}{8}}}\right)^{2}}\)</td>
+        </tr>
+        <tr>
+            <td>EJS_N1N3P0_N2N2N4_GC00405</td>
+            <td>EJS_N1N3P0_N2N2N4</td>
+            <td class="mono">0.040540262923917864</td>
+            <td>\(\frac{- \frac{7 \cdot \sqrt[3]{10}}{3} - \frac{4}{3} + 14 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{7 \cdot 10^{\frac{2}{3}}}{6}}{- \frac{4 \cdot \sqrt[3]{10}}{3} + 6 \left(- \frac{\sqrt[3]{10}}{3} - \frac{1}{3} + \frac{10^{\frac{2}{3}}}{6}\right)^{2} + \frac{8}{3} + \frac{2 \cdot 10^{\frac{2}{3}}}{3}}\)</td>
+        </tr>
+        </table>
+    </body>
+    </html>
+    
