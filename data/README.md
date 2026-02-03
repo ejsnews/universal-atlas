@@ -1,5 +1,7 @@
 # Universal Atlas of Geometric Constants
-**Author:** Eric Jacob Simon (ejsnews)
+[Consulter la version Web de l'Atlas (Rendu LaTeX)](https://ejsnews.github.io/universal-atlas/data/)
+
+**Author:** Eric Jacob Simon (ejsnews)  
 **Research Legacy:** 6 years of dedicated work on Linear Recurrences (Part of 10 years fundamental research).
 
 ## Theoretical Overview
