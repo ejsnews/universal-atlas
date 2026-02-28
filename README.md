@@ -35,35 +35,39 @@ Exact symbolic and floating-point computation (100-digit precision) of geometric
 
 ## Screenshots / Aperçus
 
-### Symbolic computation of linear recurrences — Calcul symbolique de récurrences linéaires
+### Symbolic computation — Calcul symbolique de récurrences linéaires
 
-![Symbolic linear recurrences example 1](screenshots/symbolics%20linear%20recurrences%20calculs%20example%201.png)
-
-*FR — Interface de calcul : définition de la récurrence, formule symbolique exacte générée automatiquement, séquence numérique et navigation 3D quantique.*  
-*EN — Computation interface : recurrence definition, automatically generated exact symbolic formula, numerical sequence and 3D quantum navigation.*
+<p align="center">
+<img src="screenshots/symbolics%20linear%20recurrences%20calculs%20example%201.png" width="85%"/><br/>
+<em>FR — Interface de calcul : définition de la récurrence, formule symbolique exacte, séquence numérique et navigation 3D quantique.<br/>
+EN — Computation interface : recurrence definition, exact symbolic formula, numerical sequence and 3D quantum navigation.</em>
+</p>
 
 ---
 
-![Symbolic linear recurrences example 2](screenshots/symbolics%20linear%20recurrences%20calculs%20example%202.png)
-
-*FR — Détail de la formule symbolique complète (radicaux imbriqués, cosinus, paramètres complexes) et séquence des premiers termes calculés.*  
-*EN — Detail of the full symbolic formula (nested radicals, cosines, complex parameters) and sequence of computed terms.*
+<p align="center">
+<img src="screenshots/symbolics%20linear%20recurrences%20calculs%20example%202.png" width="85%"/><br/>
+<em>FR — Détail de la formule symbolique complète : radicaux imbriqués, cosinus, paramètres complexes.<br/>
+EN — Full symbolic formula detail : nested radicals, cosines, complex parameters.</em>
+</p>
 
 ---
 
 ### Constants database search — Recherche dans la base de constantes
 
-![Constants database search 1](screenshots/constants%20database%20search%201.png)
-
-*FR — Interface de recherche par valeur numérique approchée : affichage de la constante la plus proche avec sa formule symbolique LaTeX complète.*  
-*EN — Search interface by approximate numerical value : displays the closest constant with its full LaTeX symbolic expression.*
+<p align="center">
+<img src="screenshots/constants%20database%20search%201.png" width="85%"/><br/>
+<em>FR — Recherche par valeur approchée : la constante la plus proche s'affiche avec sa formule LaTeX complète.<br/>
+EN — Search by approximate value : closest constant displayed with its full LaTeX expression.</em>
+</p>
 
 ---
 
-![Constants database search 2](screenshots/constants%20database%20search%202.png)
-
-*FR — Exemple de constante GCEJS avec expression symbolique développée impliquant √537, racines cubiques et termes trigonométriques.*  
-*EN — Example of a GCEJS constant with expanded symbolic expression involving √537, cube roots and trigonometric terms.*
+<p align="center">
+<img src="screenshots/constants%20database%20search%202.png" width="85%"/><br/>
+<em>FR — Constante GCEJS impliquant √537, racines cubiques et termes trigonométriques.<br/>
+EN — GCEJS constant involving √537, cube roots and trigonometric terms.</em>
+</p>
 
 ---
 
@@ -73,8 +77,11 @@ Exact symbolic and floating-point computation (100-digit precision) of geometric
 
 | Contenu / Content | Lien / Link |
 |---|---|
-| Index 50 chiffres (47 fichiers) / 50-digit index | [data/universal_atlas_index/](data/universal_atlas_index/) |
-| Exemples symboliques LaTeX / Symbolic LaTeX samples | [data/universal_atlas_index/](data/universal_atlas_index/) |
+| Index 50 chiffres — 47 fichiers / 50-digit index | [data/universal_atlas_index/](data/universal_atlas_index/) |
+| Exemples LaTeX 0–90 symboles | [Visual Render](data/universal_atlas_index/universal_atlas_200_geometric_constants_large_0_to_90.html) |
+| Exemples LaTeX 150–200 symboles | [Visual Render](data/universal_atlas_index/universal_atlas_200_geometric_constants_large_150_to_200.html) |
+| Exemples LaTeX 200–500 symboles | [Visual Render](data/universal_atlas_index/universal_atlas_100_geometric_constants_large_200_to_500.html) |
+| Exemples LaTeX 500–1000 symboles | [Visual Render](data/universal_atlas_index/universal_atlas_50_geometric_constants_large_500_to_1000.html) |
 | Téléchargement complet / Full download | [FULL_ATLAS_INDEX_50_DIGITS_03_02_2026.zip](data/FULL_ATLAS_INDEX_50_DIGITS_03_02_2026.zip) |
 
 ---
@@ -90,6 +97,6 @@ Tout usage commercial requiert un accord préalable écrit / *Commercial use req
 
 ---
 
-*Pour contact / For contact :* **ejsnews@gmail.com**
+*Contact :* **ejsnews@gmail.com**
 
 > *"Dans les récurrences se cachent les lois les plus subtiles de la nature."*
