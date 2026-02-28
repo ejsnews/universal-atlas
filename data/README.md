@@ -36,7 +36,7 @@ This Atlas is a call for collaboration between theoretical mathematics and exper
 This repository serves as a **formal timestamp** for my research.
 - **The Algorithm:** The underlying logic for high-degree complex recurrences is proprietary.
 - **The Data:** The symbolic expressions (LaTeX) for these 300,000 constants are stored on a private server.
-- **Usage:** This index is provided for research and reverse engineering. Any commercial use or integration into AI models without explicit agreement is prohibited.
+- **Usage:** This index is provided for research and reverse engineering. Free use for non-commercial scientific purposes is permitted, provided that proper attribution is given to the author (Eric Jacob Simon). Any commercial use, including integration into commercial AI products or services, requires explicit prior agreement with the author.
 
 ## Accessing the Data
 The constants are indexed with 50-digit precision to allow matching with empirical measurements.
