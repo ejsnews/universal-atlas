@@ -77,7 +77,7 @@ EN — GCEJS constant involving √537, cube roots and trigonometric terms.</em>
 
 | Contenu / Content | Lien / Link |
 |---|---|
-| Index 50 chiffres — 47 fichiers / 50-digit index | [data/universal_atlas_index/](data/universal_atlas_index/) |
+| Index 50 chiffres — 47 fichiers / 50-digit index | [data/](data/) |
 | Exemples LaTeX 0–90 symboles | [Visual Render](data/universal_atlas_index/universal_atlas_200_geometric_constants_large_0_to_90.html) |
 | Exemples LaTeX 150–200 symboles | [Visual Render](data/universal_atlas_index/universal_atlas_200_geometric_constants_large_150_to_200.html) |
 | Exemples LaTeX 200–500 symboles | [Visual Render](data/universal_atlas_index/universal_atlas_100_geometric_constants_large_200_to_500.html) |
