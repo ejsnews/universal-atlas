@@ -1,3 +1,5 @@
+[📐 Atlas](#atlas) · [🔬 Recherches en cours](#en-cours) · [Contact](#contact)
+
 # Universal Atlas of Geometric Constants
 [Consulter la version Web de l'Atlas (Rendu LaTeX)](https://ejsnews.github.io/universal-atlas/data/)
 
