@@ -43,7 +43,7 @@ Exact symbolic and floating-point computation (100-digit precision) of geometric
 ### Symbolic computation — Calcul symbolique de récurrences linéaires
 
 <p align="center">
-<img src="screenshots/symbolics%20linear%20recurrences%20calculs%20example%201.png" width="85%"/><br/>
+<img src="screenshots/symbolics%20linear%20recurrences%20calculs%20example%201.png" alt="symbolics linear recurrences - exact calcul example from the web" width="85%"/><br/>
 <em>FR — Interface de calcul : définition de la récurrence, formule symbolique exacte, séquence numérique et navigation 3D quantique.<br/>
 EN — Computation interface : recurrence definition, exact symbolic formula, numerical sequence and 3D quantum navigation.</em>
 </p>
@@ -51,7 +51,7 @@ EN — Computation interface : recurrence definition, exact symbolic formula, nu
 ---
 
 <p align="center">
-<img src="screenshots/symbolics%20linear%20recurrences%20calculs%20example%202.png" width="85%"/><br/>
+<img src="screenshots/symbolics%20linear%20recurrences%20calculs%20example%202.png" alt="symbolics linear recurrences - exact calcul example with graphics from the web" width="85%"/><br/>
 <em>FR — Détail de la formule symbolique complète : radicaux imbriqués, cosinus, paramètres complexes.<br/>
 EN — Full symbolic formula detail : nested radicals, cosines, complex parameters.</em>
 </p>
@@ -61,7 +61,7 @@ EN — Full symbolic formula detail : nested radicals, cosines, complex paramete
 ### Constants database search — Recherche dans la base de constantes
 
 <p align="center">
-<img src="screenshots/constants%20database%20search%201.png" width="85%"/><br/>
+<img src="screenshots/constants%20database%20search%201.png" alt="Symbolics constants from linear recurrences - database web search — Recherche dans la base web de constantes symboliques" width="85%"/><br/>
 <em>FR — Recherche par valeur approchée : la constante la plus proche s'affiche avec sa formule LaTeX complète.<br/>
 EN — Search by approximate value : closest constant displayed with its full LaTeX expression.</em>
 </p>
@@ -69,7 +69,7 @@ EN — Search by approximate value : closest constant displayed with its full La
 ---
 
 <p align="center">
-<img src="screenshots/constants%20database%20search%202.png" width="85%"/><br/>
+<img src="screenshots/constants%20database%20search%202.png" alt="Symbolics constants with 100 digits values from linear recurrences - database quick web search" width="85%"/><br/>
 <em>FR — Constante GCEJS impliquant √537, racines cubiques et termes trigonométriques.<br/>
 EN — GCEJS constant involving √537, cube roots and trigonometric terms.</em>
 </p>
