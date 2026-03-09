@@ -1,4 +1,5 @@
-# Universal Atlas of Geometric Constants — GCEJS
+## Universal Atlas of Geometric Constants — GCEJS
+
 **Author:** Eric Jacob Simon (ejsnews)  
 **FR** | Atlas de 300 000 constantes géométriques issues des récurrences linéaires généralisées.  
 **EN** | Atlas of 300,000 geometric constants derived from generalized linear recurrences.
@@ -6,6 +7,8 @@
 ---
 
 ## FR — Présentation
+
+[Consulter la version Web de l'Atlas (Rendu LaTeX)](https://ejsnews.github.io/universal-atlas/data/)
 
 Ce dépôt constitue un horodatage formel et un inventaire public de résultats issus de recherches indépendantes menées depuis 1987. Il s'inscrit dans un programme théorique plus large reliant mathématiques, physique quantique et cosmologie.
 
@@ -20,6 +23,8 @@ Calcul symbolique exact et flottant (100 chiffres de précision) de constantes g
 ---
 
 ## EN — Overview
+
+[Consult the Web version of the Atlas (LaTeX rendering)](https://ejsnews.github.io/universal-atlas/data/)
 
 This repository is a formal timestamp and public inventory of results from independent research conducted since 1987, part of a broader theoretical programme connecting mathematics, quantum physics and cosmology.
 
