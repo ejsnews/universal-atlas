@@ -95,9 +95,12 @@ EN — GCEJS constant involving √537, cube roots and trigonometric terms.</em>
 
 **© 2026 Eric Jacob Simon — All Rights Reserved.**
 
-Licence : CC BY-NC 4.0  
-Usage scientifique non commercial libre avec attribution.  
-*Free non-commercial scientific use with attribution.*  
+**Licence : CC BY-NC 4.0**
+
+* **FR :** Usage scientifique et privé non commercial libre avec attribution obligatoire de l'auteur (**Eric Jacob Simon**). Toute exploitation commerciale (jeux, logiciels, publications, fichiers STL, etc.) est soumise à un accord préalable écrit et donnera lieu à une négociation de royalties.
+* **EN :** Free non-commercial scientific and private use with mandatory attribution to the author (**Eric Jacob Simon**). Any commercial use (video games, software, publications, STL files, etc.) requires prior written agreement and will be subject to royalty negotiations.
+
+*Pour toute demande, contactez l'auteur via ce profil GitHub / For any inquiries, contact the author via this GitHub profile.*
 Tout usage commercial requiert un accord préalable écrit / *Commercial use requires prior written agreement.*
 
 ---
