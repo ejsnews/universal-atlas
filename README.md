@@ -1,5 +1,15 @@
 ## Universal Atlas of Geometric Constants — GCEJS
 
+# universal-atlas
+
+**Atlas géométrique du projet Codex EJS**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19423213.svg)](https://doi.org/10.5281/zenodo.19423213)
+
+**DOI :** [10.5281/zenodo.19423213](https://doi.org/10.5281/zenodo.19423213)
+
+Voir le site principal : https://ejsnews.github.io
+
 **Author:** Eric Jacob Simon (ejsnews)  
 **FR** | Atlas de 300 000 constantes géométriques issues des récurrences linéaires généralisées.  
 **EN** | Atlas of 300,000 geometric constants derived from generalized linear recurrences.
