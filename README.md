@@ -2,13 +2,14 @@
 
 # universal-atlas
 
-**Atlas géométrique du projet Codex EJS**
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19423213.svg)](https://doi.org/10.5281/zenodo.19423213)
 
 **DOI :** [10.5281/zenodo.19423213](https://doi.org/10.5281/zenodo.19423213)
 
-Voir le site principal : https://ejsnews.github.io
+**Site principal / Main website :** [https://ejsnews.github.io](https://ejsnews.github.io)
+
+### 🌐 Atlas géométrique du projet Codex EJS  
+### 🌐 Geometric Atlas of the Codex EJS Project
 
 **Author:** Eric Jacob Simon (ejsnews)  
 **FR** | Atlas de 300 000 constantes géométriques issues des récurrences linéaires généralisées.  
@@ -16,35 +17,27 @@ Voir le site principal : https://ejsnews.github.io
 
 ---
 
-## FR — Présentation
+## Présentation / Overview
 
-[Consulter la version Web de l'Atlas (Rendu LaTeX)](https://ejsnews.github.io/universal-atlas/data/)
+**FR :**  
+[Consulter la version Web de l’Atlas (Rendu LaTeX)](https://ejsnews.github.io/universal-atlas/data/)
 
-Ce dépôt constitue un horodatage formel et un inventaire public de résultats issus de recherches indépendantes menées depuis 1987. Il s'inscrit dans un programme théorique plus large reliant mathématiques, physique quantique et cosmologie.
+Ce dépôt constitue un horodatage formel et un inventaire public de résultats issus de recherches indépendantes menées depuis 1987. Il s’inscrit dans un programme théorique reliant mathématiques, physique quantique et cosmologie.
 
-Deux familles de résultats sont présentées :
-
-**1. Récurrences linéaires généralisées**  
-Calcul symbolique exact et flottant (100 chiffres de précision) de constantes géométriques issues de récurrences de degré quelconque, à paramètres complexes et fractionnaires. Les formules symboliques sont exprimées en LaTeX et couvrent des complexités de 0 à 1000+ symboles.
-
-**2. Base de données des constantes GCEJS**  
-300 000 constantes indexées à 50 chiffres de précision, consultables et téléchargeables. Ce corpus est amené à croître (400 000, 500 000...) au fur et à mesure des calculs.
-
----
-
-## EN — Overview
-
+**EN :**  
 [Consult the Web version of the Atlas (LaTeX rendering)](https://ejsnews.github.io/universal-atlas/data/)
 
-This repository is a formal timestamp and public inventory of results from independent research conducted since 1987, part of a broader theoretical programme connecting mathematics, quantum physics and cosmology.
+This repository is a formal timestamp and public inventory of results from independent research conducted since 1987. It is part of a broader theoretical programme connecting mathematics, quantum physics and cosmology.
 
-Two families of results are presented :
+### Deux familles de résultats / Two families of results
 
-**1. Generalized Linear Recurrences**  
-Exact symbolic and floating-point computation (100-digit precision) of geometric constants from recurrences of any degree, with complex and fractional parameters. Symbolic expressions are rendered in LaTeX, ranging from 0 to 1000+ symbols in complexity.
+**1. Récurrences linéaires généralisées / Generalized Linear Recurrences**  
+**FR :** Calcul symbolique exact et flottant (100 chiffres de précision) de constantes géométriques issues de récurrences de degré quelconque, à paramètres complexes et fractionnaires.  
+**EN :** Exact symbolic and floating-point computation (100-digit precision) of geometric constants from recurrences of any degree, with complex and fractional parameters.
 
-**2. GCEJS Constants Database**  
-300,000 constants indexed at 50-digit precision, browsable and downloadable. This corpus will grow (400,000, 500,000...) as computations progress.
+**2. Base de données des constantes GCEJS / GCEJS Constants Database**  
+**FR :** 300 000 constantes indexées à 50 chiffres de précision, consultables et téléchargeables.  
+**EN :** 300,000 constants indexed at 50-digit precision, browsable and downloadable. This corpus will grow (400,000, 500,000...) as computations progress.
 
 ---
 
