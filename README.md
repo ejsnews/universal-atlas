@@ -1,6 +1,6 @@
 ## Universal Atlas of Geometric Constants — GCEJS
 
-# universal-atlas
+**Part of the Codex EJS Project**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19423213.svg)](https://doi.org/10.5281/zenodo.19423213)
 
@@ -11,7 +11,8 @@
 ### 🌐 Atlas géométrique du projet Codex EJS  
 ### 🌐 Geometric Atlas of the Codex EJS Project
 
-**Author:** Eric Jacob Simon (ejsnews)  
+**Propriété Intellectuelle — Eric Jacob Simon (EJSNews) **  
+**Intellectual Property — Eric Jacob Simon (EJSNews) **
 **FR** | Atlas de 300 000 constantes géométriques issues des récurrences linéaires généralisées.  
 **EN** | Atlas of 300,000 geometric constants derived from generalized linear recurrences.
 
@@ -109,5 +110,8 @@ Tout usage commercial requiert un accord préalable écrit / *Commercial use req
 ---
 
 *Contact :* **ejsnews@gmail.com**
-> *« Dans les nombres premiers se cachent les lois divines du Codex et de la première lumière, tandis que dans les récurrences se cachent les lois les plus subtiles de la nature.»*  
-> *"In prime numbers lie hidden the divine laws of the Codex and the first light, while in recurrences lie hidden the most subtle laws of nature."*
+---
+
+> **FR :** « Dans les nombres premiers se cachent les lois divines du Codex et de la première lumière, tandis que dans les récurrences se cachent les lois les plus subtiles de la nature. »
+
+> **EN :** « In prime numbers lie hidden the divine laws of the Codex and the first light, while in recurrences lie hidden the most subtle laws of nature. »
