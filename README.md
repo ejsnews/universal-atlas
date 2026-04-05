@@ -13,6 +13,7 @@
 
 **Propriété Intellectuelle — Eric Jacob Simon (EJSNews) **  
 **Intellectual Property — Eric Jacob Simon (EJSNews) **
+
 **FR** | Atlas de 300 000 constantes géométriques issues des récurrences linéaires généralisées.  
 **EN** | Atlas of 300,000 geometric constants derived from generalized linear recurrences.
 
